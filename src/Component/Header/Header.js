@@ -222,7 +222,7 @@ const Header = () => {
                       services
                     </Link>
                   </li>
-                  {/* <li className="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
                       className={`nav-link  pe-2 ${
                         isHomePage ? "fw-bold" : ""
@@ -271,7 +271,7 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li> */}
+                  </li>
                   <li className="nav-item">
                     <Link
                       className={`nav-link pe-3 ${

@@ -77,7 +77,13 @@ const Header = () => {
               to="/"
               onClick={() => handleNavClick("Home")}
             >
-              <img src={logo} alt="logo" width="120px" />
+              <img
+                src={logo}
+                alt="Groavy-logo"
+                width="120px"
+                height={"auto"}
+                loading="lazy"
+              />
             </Link>
 
             <button
@@ -153,7 +159,6 @@ const Header = () => {
                       to="#"
                       id="layoutPlanDropdown"
                       role="button"
-                    
                     >
                       project
                       <FontAwesomeIcon
@@ -202,7 +207,7 @@ const Header = () => {
                       </li>
                     </ul>
                   </li>
-                  
+
                   <li className="nav-item">
                     <Link
                       className={`nav-link pe-3 ${
@@ -217,7 +222,7 @@ const Header = () => {
                       services
                     </Link>
                   </li>
-                  <li className="nav-item dropdown">
+                  {/* <li className="nav-item dropdown">
                     <Link
                       className={`nav-link  pe-2 ${
                         isHomePage ? "fw-bold" : ""
@@ -241,27 +246,7 @@ const Header = () => {
                         <Link
                           className={`dropdown-item ${
                             isHomePage ? "fw-bold" : ""
-                          } ${
-                            location.pathname === "/blogs"
-                              ? "active"
-                              : ""
-                          }`}
-                          to="/blogs"
-                          onClick={() => {
-                            handleNavClick("Elegant");
-                            handleToggleOffCanvas();
-                          }}
-                        >
-                          blogs
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className={`dropdown-item ${
-                            isHomePage ? "fw-bold" : ""
-                          } ${
-                            location.pathname === "/news" ? "active" : ""
-                          }`}
+                          } ${location.pathname === "/news" ? "active" : ""}`}
                           to="/news"
                           onClick={() => {
                             handleNavClick("Upcomming");
@@ -271,8 +256,22 @@ const Header = () => {
                           news
                         </Link>
                       </li>
+                      <li>
+                        <Link
+                          className={`dropdown-item ${
+                            isHomePage ? "fw-bold" : ""
+                          } ${location.pathname === "/blogs" ? "active" : ""}`}
+                          to="/blogs"
+                          onClick={() => {
+                            handleNavClick("Elegant");
+                            handleToggleOffCanvas();
+                          }}
+                        >
+                          blogs
+                        </Link>
+                      </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link
                       className={`nav-link pe-3 ${

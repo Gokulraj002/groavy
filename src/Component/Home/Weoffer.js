@@ -10,12 +10,12 @@ const Weoffer = () => {
       <div className="container-fluid">
         <div className="container ">
           <div className="row my-3 aos">
-            <h6
+            <h4
               className="font1 text-center mt-3 mt-md-1  fon"
               style={{ color: "#3A6958" }}
             >
               Our Offering Farmlands
-            </h6>
+            </h4>
             <div
               className="col-12 col-lg-6 mt-4  aos"
               data-aos="fade-down-right"
@@ -61,9 +61,9 @@ const Weoffer = () => {
               src={Home}
               alt="Buy a Land"
             ></img>
-            <h4 className=" text-center font2 color1 mt-4 pt-md-2">
+            <h3 className=" text-center font2 color1 mt-4 pt-md-2">
               Holistically Managed Farmlands
-            </h4>
+            </h3>
 
             <p className="justify px-md-2 text-white">
               Our farmlands are meticulously managed to preserve the integrity
@@ -83,9 +83,9 @@ const Weoffer = () => {
               src={Land}
               alt="Buy a Farm"
             ></img>
-            <h4 className="text-center font2 color1 mt-4 pt-md-2">
+            <h3 className="text-center font2 color1 mt-4 pt-md-2">
               Experience Groavy Buildcon
-            </h4>
+            </h3>
 
             <p className="justify text-white">
               Discover the everlasting paradises of serenity with Groavy
@@ -105,7 +105,7 @@ const Weoffer = () => {
               src={Service}
               alt="Buy a Farmland"
             ></img>
-            <h4 className=" text-center font2 color1 mt-4 pt-md-2">Modern Serenity</h4>
+            <h3 className=" text-center font2 color1 mt-4 pt-md-2">Modern Serenity</h3>
             <p className="justify text-white">
               We understand the importance of modern amenities in enhancing the
               quality of life. That's why our developments seamlessly integrate

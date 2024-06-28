@@ -199,7 +199,7 @@ background-color:#255946 !important;
 
 #eligantform {
   /* background: var(--white); */
-  background-color: #056161;
+  background-color: #255946;
   padding: 3em;
    border-radius: 50px;
  /* border-left: 1px solid var(--white);
@@ -245,15 +245,17 @@ background-color:#255946 !important;
   color:rgb(250, 44, 44);
 }
 
-#eligantform input:hover::placeholder {
-  color:#F9AB24;
-  /* color: rgba(250, 44, 44, 0.5); */
+#eligantform input:focus::placeholder {
+  color: #ffffff;
+  /* color: rgba(250, 44, 44, 0.7); */
 }
 
-#eligantform input:focus::placeholder {
-  color:#030303;
-  /* color: rgba(250, 44, 44, 0.7);  */
+#eligantform  input::placeholder {
+  color: #999; /* A default color for placeholder when not focused */
 }
+
+
+
 
 #eligantform input[type="text"]:focus,
 #eligantform input[type="tel"]:focus,
@@ -270,7 +272,7 @@ background-color:#255946 !important;
   font-size: 1rem;
   cursor: pointer;
   background: var(--drop-bg);
-  background: #000000;
+  background: #f9ab24;
   border: none;
   border-radius: 4px;
   padding: 1em;
@@ -281,7 +283,7 @@ background-color:#255946 !important;
 }
 
 #eligantform .eligentformsubmit:hover {
-  background-color: rgba(7, 7, 7, 0.6);
+  background-color: #ffa200;
 }
 
 #eligantform .eligentformsubmit:active {

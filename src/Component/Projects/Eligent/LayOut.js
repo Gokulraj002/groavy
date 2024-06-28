@@ -18,7 +18,7 @@ const Layout = () => {
           <img
             className="w-100 mx-auto d-block zoomable-image"
             src={LayoutImage}
-            alt="Layout"
+            alt="elegant orchards Layout"
             onClick={openImageInNewTab}
           />
         </Zoom>

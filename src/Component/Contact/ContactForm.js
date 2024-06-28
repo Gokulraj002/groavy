@@ -29,17 +29,17 @@ const ContactForm = () => {
     window.open(url, "_blank");
   };
   const handleLinkedinClick = () => {
-    window.open('https://www.linkedin.com/in/groavy-buildcon/', '_blank');
-};
+    window.open("https://www.linkedin.com/in/groavy-buildcon/", "_blank");
+  };
 
   return (
     <div className="container-fluid bg-light py-5 contact-containerfluid">
       <div className="container contact-container">
         <div className="row">
           <div className="d-flex mb-3 flex-column">
-            <h3 className="font2 text-center mt-4 color">
+            <h1 className="font2 text-center mt-4 color">
               Helping you is our priority
-            </h3>
+            </h1>
           </div>
           <div className="col-lg-4 col-md-12 text-white ps-4 shadow-lg">
             <div className="mb-4 mt-md-3">
@@ -127,7 +127,6 @@ const ContactForm = () => {
                   >
                     LinkedIn
                   </span>
-                  
                 </li>
               </ul>
             </div>

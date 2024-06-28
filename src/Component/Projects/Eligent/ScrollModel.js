@@ -56,7 +56,7 @@ function ScrollModal() {
                 <EligantMainForm onSubmitSuccess={handleFormSubmitSuccess}/>
               </div>
               <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center p-4 p-0" >
-                <img src={Banner} alt="Eligent-Banner" className="w-100" />
+                <img src={Banner} alt="Eligent orchards-Banner" className="w-100" />
               </div>
             </div>
           </Modal.Body>

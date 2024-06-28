@@ -3,6 +3,7 @@ import image from "../../images/About-Banner.png";
 import image1 from "../../images/mob-about.png";
 import about from "../../images/about.jpg";
 import './about.css';
+import { Helmet } from 'react-helmet-async';
 import Mision from "../../images/Mision3.jpg";
 import Vision from "../../images/Vision.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +12,31 @@ import { faTree } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   return (
+    
     <>
+    <Helmet>
+        <title>About Us | GroavyBuildcon</title>
+        <meta name="description" content='Learn more about GroavyBuildcon, our mission, vision, and the team behind our success in the real estate market.' />
+        <meta name="keywords" content="About GroavyBuildcon, real estate, farmland sales, Bengaluru" />
+        <meta name="author" content="GroavyBuildcon" />
+        <meta property="og:title" content="About Us | GroavyBuildcon" />
+        <meta property="og:description" content="Learn more about GroavyBuildcon, our mission, vision, and the team behind our success in the real estate market." />
+        <meta property="og:image" content="URL-to-your-featured-image" />
+        <meta property="og:url" content="https://www.groavy.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="GroavyBuildcon" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | GroavyBuildcon" />
+        <meta name="twitter:description" content="Learn more about GroavyBuildcon, our mission, vision, and the team behind our success in the real estate market." />
+        <meta name="twitter:image" content="URL-to-your-featured-image" />
+        <meta name="twitter:site" content="@yourtwitterhandle" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="canonical" href="https://www.groavy.com/about" />
+      </Helmet>
+
+
+
     <div className="position-relative">
       {/* <div className="img">
 
@@ -24,7 +49,7 @@ const About = () => {
   <div className="position-absolute top-50 start-50 translate-middle">
 
 
-    <h2 id="head" className="text-white text-center">
+    <h1 id="head" className="text-white text-center">
               <FontAwesomeIcon
                 icon={faTree}
                 className="icon-before animated-icon"
@@ -34,7 +59,7 @@ const About = () => {
                 icon={faTree}
                 className="icon-after animated-icon"
               />
-            </h2>
+            </h1>
             <p className="para-color font text-white text-center">the best way to predict the future is to create it together.</p>
 
     </div>

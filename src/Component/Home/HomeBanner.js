@@ -30,7 +30,7 @@ const HomeBanner = () => {
             ></video>
           </div>
           <div className=" position-absolute translate-middle hero-content text-center">
-            <h2 id="head">
+            <h1 id="head">
               <FontAwesomeIcon
                 icon={faTree}
                 className="icon-before animated-icon"
@@ -41,7 +41,7 @@ const HomeBanner = () => {
                 icon={faTree}
                 className="icon-after animated-icon"
               />
-            </h2>
+            </h1>
             <p className="font fw-bold">
               embark on a journey to own your perfect piece of earth, where
               dreams bloom and possibilities grow.

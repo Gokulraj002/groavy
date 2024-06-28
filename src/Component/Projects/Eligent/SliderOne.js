@@ -53,7 +53,7 @@ const SliderComponent = () => {
                 <img
                   className="d-block w-100"
                   src={image}
-                  alt={`Slide ${index + 1}`}
+                  alt={`Elegant Orchards ${index + 1}`}
                 />
               </Carousel.Item>
             ))}
@@ -66,7 +66,7 @@ const SliderComponent = () => {
                 className={`small-image mx-1 ${
                   index === selectedImageIndex ? "selected" : ""
                 }`}
-                alt={`Thumbnail ${index}`}
+                alt={`Elegant ${index}`}
                 onClick={() => handleThumbnailClick(index)}
               />
             ))}

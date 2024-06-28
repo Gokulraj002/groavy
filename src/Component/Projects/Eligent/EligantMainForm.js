@@ -110,7 +110,7 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
         className="animated fadeInUp shadow-lg para-color"
         onSubmit={handleSubmit}
       >
-        <h3 className="text-center para-color2 mb-4">
+        <h3 className="text-center para-color3 mb-4">
           Fill this to Change Future{" "}
         </h3>
         <div className="form-group">

@@ -55,7 +55,7 @@ const Testimonials = () => {
               />
               <Row className="d-flex justify-content-center">
                 <Col lg={8}>
-                  <h5 className="mb-3 font2">{item.name}</h5>
+                  <h3 className="mb-3 font2">{item.name}</h3>
                   <p>{item.profession}</p>
                   <p className="text-white test-font">
                     <i className="fas fa-quote-left pe-2" />

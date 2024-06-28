@@ -14,10 +14,55 @@ import NearByLocation from "./NearByLocation";
 // import Testimonials from './Testimonials';
 import ProjectHighlights from "./ProjectHighlights";
 import ScrollModel from "./ScrollModel";
+import { Helmet } from "react-helmet-async";
 
 const Eligentpage = () => {
   return (
     <div>
+      <Helmet>
+        <title>Elegant Orchards  | GroavyBuildcon</title>
+        <meta
+          name="description"
+          content='Explore Elegant Orchards Estate by GroavyBuildcon, offering premium farmland sales opportunities in Bengaluru.'
+        />
+        <meta
+          name="keywords"
+          content="Elegant Orchards Estate, GroavyBuildcon, farmland sales, Bengaluru real estate"
+        />
+        <meta name="author" content="GroavyBuildcon" />
+        <meta
+          property="og:title"
+          content="Elegant Orchards Estate | GroavyBuildcon"
+        />
+        <meta
+          property="og:description"
+          content="Explore Elegant Orchards Estate by GroavyBuildcon, offering premium farmland sales opportunities in Bengaluru."
+        />
+        <meta property="og:image" content="URL-to-your-featured-image" />
+        <meta
+          property="og:url"
+          content="https://www.groavyF.com/elegantorchards"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="GroavyBuildcon" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Elegant Orchards Estate | GroavyBuildcon"
+        />
+        <meta
+          name="twitter:description"
+          content="Explore Elegant Orchards Estate by GroavyBuildcon, offering premium farmland sales opportunities in Bengaluru."
+        />
+        <meta name="twitter:image" content="URL-to-your-featured-image" />
+        <meta name="twitter:site" content="@yourtwitterhandle" />
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#ffffff" />
+        <link
+          rel="canonical"
+          href="https://www.groavy.com/elegantorchards"
+        />
+      </Helmet>
       {/* <img src={image} alt="about-banner" className="w-100" height={'400px'} />  */}
 
       <Eligenthome />

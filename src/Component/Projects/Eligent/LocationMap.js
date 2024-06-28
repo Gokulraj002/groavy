@@ -17,7 +17,7 @@ const LocationMap = () => {
           <img
             className='w-100 zoomable-image '
             src={Location}
-            alt='Location'
+            alt='Elegant orchards Location'
             onClick={openImageInNewTab}
           />
         </Zoom>

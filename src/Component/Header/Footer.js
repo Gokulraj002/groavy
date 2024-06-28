@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from "../../images/logo size.png";
 import { faHome, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -28,6 +29,14 @@ const Footer = () => {
             <div className="row para-color1">
               <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 fw-bold">Groavy Buildcon</h6>
+                <img
+                  src={logo}
+                  className="pb-3"
+                  alt="Groavy logo"
+                  width="120px"
+                  height={"auto"}
+                  loading="lazy"
+                />
                 <p className="" style={{ color: "#ccc" }}>
                   Embark on a journey to own your perfect piece of earth, where
                   dreams bloom and possibilities grow.
@@ -100,13 +109,13 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <hr className="w-100 clearfix d-md-none" />
-              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <hr className="w-100 clearfix d-md-none " />
+              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
                 <h6 className="text-uppercase mb-4 fw-bold">Links</h6>
                 <p>
                   <Link
                     to="/"
-                    className="text-decoration-none"
+                    className="text-decoration-none "
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Home
@@ -149,7 +158,7 @@ const Footer = () => {
                   </Link>
                 </p>
               </div>
-              <hr className="w-100 clearfix d-md-none" />
+              <hr className="w-100 clearfix d-md-none " />
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 fw-bold">Projects</h6>
                 <p>
@@ -191,7 +200,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="privacypolicies"
-                    className="text-decoration-none"
+                    className="text-decoration-none "
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Privacy & Policy
@@ -223,7 +232,7 @@ const Footer = () => {
                   <FontAwesomeIcon icon={faEnvelope} className="mr-3 pe-2" />
                   <Link
                     to="#"
-                    className="text-decoration-none"
+                    className="text-decoration-none para-color"
                     style={{ color: "#ccc" }}
                     onClick={(e) =>
                       handleLinkClick("mailto:support@groavy.com", e)
@@ -236,7 +245,7 @@ const Footer = () => {
                   <FontAwesomeIcon icon={faPhone} className="mr-3 pe-2" />
                   <Link
                     to="#"
-                    className="text-decoration-none"
+                    className="text-decoration-none para-color"
                     style={{ color: "#ccc" }}
                     onClick={(e) => handleLinkClick("tel:6366829999", e)}
                   >
@@ -249,7 +258,7 @@ const Footer = () => {
         </div>
         <hr />
         <div className="p-3 text-light">
-          <p className="text-center " style={{ color: "#ccc" }}>
+          <p className="text-center para-color" style={{ color: "#ccc" }}>
             © 2024 Groavy Buildcon LLP | All Rights Reserved.
           </p>
         </div>

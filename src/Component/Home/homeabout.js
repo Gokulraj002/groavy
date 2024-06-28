@@ -17,7 +17,7 @@ const HomeAbout = () => {
           <div className="row  py-md-5 aos">
             <div className="col-12 col-lg-6 p-lg-4 para-color2">
               <div data-aos="fade-right">
-                <h6 className="m-0 fs-4 color">Welcome To</h6>
+                <h2 className="m-0 fs-4 color">Welcome To</h2>
                 <h2 className="font1 color1">Groavy Buildcon</h2>
                 <p className="text-white justify">
                   Groavy Buildcon is a prominent realty enterprise, redefining
@@ -40,6 +40,8 @@ const HomeAbout = () => {
                 className="w-100 mx-auto d-block p-md-2 "
                 src={welcome}
                 alt="Banner"
+                 height={'auto'}
+                  loading="lazy"
               />
             </div>
           </div>
@@ -74,6 +76,7 @@ const HomeAbout = () => {
               <img
                 className="w-100 mt-md-5 d-block mx-auto "
                 src={about}
+                 height={'auto'} loading="lazy"
                 alt="logo"
               ></img>
             </div>
@@ -95,8 +98,9 @@ const HomeAbout = () => {
               className="w-100  d-block mx-auto"
               src={Home}
               alt="Buy a Land"
+               height={'auto'} loading="lazy"
             ></img>
-            <h4 className=" text-center font2 color1">Buy a Land</h4>
+            <h3 className=" text-center font2 color1">Buy a Land</h3>
 
             <p className="text-center px-md-2 text-white">
               Discover your dream home with Groavy Buildcon. Let our experts
@@ -112,9 +116,10 @@ const HomeAbout = () => {
             <img
               className="w-100 d-block mx-auto"
               src={Land}
+               height={'auto'} loading="lazy"
               alt="Buy a Farm"
             ></img>
-            <h4 className="text-center font2 color1">Buy a Farm</h4>
+            <h3 className="text-center font2 color1">Buy a Farm</h3>
 
             <p className="text-center text-white">
               Explore endless possibilities with our land listings at Groavy
@@ -130,9 +135,10 @@ const HomeAbout = () => {
             <img
               className="w-100 d-block mx-auto"
               src={Service}
+               height={'auto'} loading="lazy"
               alt="Buy a Farmland"
             ></img>
-            <h4 className=" text-center font2 color1">Buy a Farmland</h4>
+            <h3 className=" text-center font2 color1">Buy a Farmland</h3>
 
             <p className="text-center text-white">
               Embark on a rural adventure with our diverse farmland listings at

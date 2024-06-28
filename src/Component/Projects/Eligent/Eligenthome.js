@@ -32,9 +32,9 @@ const CarouselComponent = () => {
       </div>
      
       <div className="position-absolute pos translate-middle">
-        <img className="mx-auto d-block imggg" src={logo} alt="circle logo" />
+        <img className="mx-auto d-block imggg" src={logo} alt="elegant circle logo" />
 
-        <p className="text-center text-white gap-0" id="head1">
+        <h1 className="text-center text-white gap-0" id="head1">
           {/* Invest in Our Premium Farm Lands and Villas Project */}
           <FontAwesomeIcon
             icon={faTree}
@@ -43,7 +43,7 @@ const CarouselComponent = () => {
           Discover the Future of Luxury Living <br></br>Invest Wisely, Live
           Lavishly{" "}
           <FontAwesomeIcon icon={faTree} className="icon-after animated-icon" />
-        </p>
+        </h1>
       </div>
     </div>
   );

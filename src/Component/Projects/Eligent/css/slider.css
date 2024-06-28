@@ -31,8 +31,13 @@ background-color: rgba(48, 27, 27, 0.253);
 }
 .modal-content
 #eligantform
-p {
-  color: black;
+h3 {
+  color: black ;
+}
+
+#eligantform
+h3 {
+  color: rgb(255, 255, 255) ;
 }
 .modal-content
 .text-danger{

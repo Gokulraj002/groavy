@@ -1,3 +1,4 @@
+import React from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./GallerySlider.css";
@@ -30,22 +31,20 @@ const responsive = {
 };
 
 const sliderImageUrl = [
-  { url: ori1 },
-  { url: ori },
-  { url: FullView },
-  { url: Entrance },
-  { url: Park },
-  { url: Rock },
-  { url: swimming },
-  { url: Gate },
-  
-
-  { url: Swim },
+  { url: ori1, alt: 'Image 1', width: 600, height: 400 },
+  { url: ori, alt: 'Image 2', width: 600, height: 400 },
+  { url: FullView, alt: 'Full View', width: 600, height: 400 },
+  { url: Entrance, alt: 'Entrance', width: 600, height: 400 },
+  { url: Park, alt: 'Park', width: 600, height: 400 },
+  { url: Rock, alt: 'Rock', width: 600, height: 400 },
+  { url: swimming, alt: 'Swimming', width: 600, height: 400 },
+  { url: Gate, alt: 'Gate', width: 600, height: 400 },
+  { url: Swim, alt: 'Swim', width: 600, height: 400 },
 ];
 
 const Slider = () => {
   return (
-    <div >
+    <div>
       <h2 className="font1 text-center mt-2 mb-4" style={{color:'#3A6958'}}>Project Gallery</h2>
       <Carousel
         responsive={responsive}
@@ -57,13 +56,21 @@ const Slider = () => {
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {sliderImageUrl.map((imageUrl, index) => (
+        {sliderImageUrl.map((image, index) => (
           <div className="slider" key={index}>
-            <img className="w-100 rounded-0" src={imageUrl.url} alt="Gallery Item" />
+            <img 
+              className="w-100 rounded-0" 
+              src={image.url} 
+              alt={image.alt} 
+              loading="lazy" 
+              width={image.width} 
+              height={image.height} 
+            />
           </div>
         ))}
       </Carousel>
     </div>
   );
 };
-export default Slider
+
+export default Slider;

@@ -119,7 +119,7 @@ const Makeus = () => {
               </div>
             </div>
           </div>
-            
+          
         </div>
       </div>
 
@@ -191,27 +191,27 @@ const Makeus = () => {
         <div className="container para-color2">
           <div className="row g-0 " ref={ref}>
             <div className="col-6 col-md-3 p-md-5 py-3  text-center">
-              <h1 className="mb-3 text-white">
+              <h2 className="mb-3 text-white">
                 {inView ? <CountUp end={50} duration={4} /> : "0"}+
-              </h1>
+              </h2>
               <p >Projects Completed</p>
             </div>
             <div className="col-6 col-md-3 p-md-5 py-3 text-center">
-              <h1 className="mb-3 text-white">
+              <h2 className="mb-3 text-white">
                 {inView ? <CountUp end={100} duration={4} /> : "0"}+
-              </h1>
+              </h2>
               <p>Clients</p>
             </div>
             <div className=" col-6 col-md-3 p-md-5 py-3 text-center">
-              <h1 className="mb-3 text-white">
+              <h2 className="mb-3 text-white">
                 {inView ? <CountUp end={60} duration={4} /> : "0"}+
-              </h1>
+              </h2>
               <p>Employees</p>
             </div>
             <div className="col-6 col-md-3 p-md-5 py-3 text-center">
-              <h1 className="mb-3 text-white">
+              <h2 className="mb-3 text-white">
                 {inView ? <CountUp end={5} duration={4} /> : "0"}+
-              </h1>
+              </h2>
               <p>Years of Experience</p>
             </div>
           </div>

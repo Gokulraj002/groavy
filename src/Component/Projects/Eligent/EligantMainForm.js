@@ -10,6 +10,11 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
     whatsapp: "",
     email: "",
   });
+  const [errors, setErrors] = useState({
+    name: "",
+    whatsapp: "",
+    email: "",
+  });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,25 +27,50 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
+    let error = "";
 
     if (name === "whatsapp") {
       const regex = /^[0-9\b]+$/;
       if (value === "" || regex.test(value)) {
+        if (value.length > 0 && ["1", "2", "3", "4", "5"].includes(value[0])) {
+          error = "Enter a valid number";
+        }
         setFormData({
           ...formData,
           [name]: value,
         });
       }
-    } else {
+    } else if (name === "name") {
+      const regex = /^[a-zA-Z\s]*$/;
+      if (!regex.test(value)) {
+        error = "Don't use special characters or numbers in the name";
+      }
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    } else if (name === "email") {
+      if (!value.endsWith("@gmail.com")) {
+        error = "Email must end with @gmail.com";
+      }
       setFormData({
         ...formData,
         [name]: value,
       });
     }
+
+    setErrors({
+      ...errors,
+      [name]: error,
+    });
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const hasErrors = Object.values(errors).some((error) => error !== "");
+    if (hasErrors) {
+      return;
+    }
     console.log("Form Data:", formData);
     submitToZohoCRM(formData);
     setFormData({
@@ -48,8 +78,6 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
       whatsapp: "",
       email: "",
     });
-    // showSuccessNotification();s
-
     onSubmitSuccess();
   };
 
@@ -94,7 +122,6 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
     });
   };
 
-
   const showSuccessNotification = () => {
     notification.success({
       message: "Form Submitted",
@@ -104,7 +131,7 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
   };
 
   return (
-    <div className="form-container position-relative ">
+    <div className="form-container position-relative">
       <form
         id="eligantform"
         className="animated fadeInUp shadow-lg para-color"
@@ -125,6 +152,7 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
             onChange={handleChange}
             required
           />
+          {errors.name && <p style={{color:'red', fontSize:'12px' }}>{errors.name}</p>}
         </div>
         <div className="form-group">
           <label htmlFor="whatsapp">WhatsApp No</label>
@@ -140,6 +168,7 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
             pattern="[0-9]*"
             required
           />
+          {errors.whatsapp && <p style={{color:'red', fontSize:'12px' }}>{errors.whatsapp}</p>}
         </div>
         <div className="form-group">
           <label htmlFor="email">Email</label>
@@ -153,10 +182,11 @@ const EligantMainForm = ({ onSubmitSuccess }) => {
             onChange={handleChange}
             required
           />
+          {errors.email && <p style={{color:'red', fontSize:'12px' }}>{errors.email}</p>}
         </div>
         <button
           type="submit"
-          className="eligentformsubmit mx-auto  d-block rounded-pill"
+          className="eligentformsubmit mx-auto d-block rounded-pill"
         >
           Submit
         </button>

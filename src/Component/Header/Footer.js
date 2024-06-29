@@ -1,3 +1,5 @@
+// src/components/Footer/Footer.js
+
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../images/logo size.png";
@@ -11,6 +13,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import { TfiAngleDoubleRight } from "react-icons/tfi";
+import "./custom.css";
 
 const Footer = () => {
   const handleLinkClick = (url, e) => {
@@ -27,8 +30,8 @@ const Footer = () => {
         <div className="container pt-4" style={{ color: "#ccc" }}>
           <section>
             <div className="row para-color1">
-              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 fw-bold">Groavy Buildcon</h6>
+              <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-2">
+                <h6 className="text-uppercase mb-4  para-color1">Groavy Buildcon</h6>
                 <img
                   src={logo}
                   className="pb-3"
@@ -43,7 +46,7 @@ const Footer = () => {
                 </p>
                 <div>
                   <Link
-                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons"
+                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons "
                     role="button"
                     to="#"
                     onClick={(e) =>
@@ -59,7 +62,7 @@ const Footer = () => {
                     />
                   </Link>
                   <Link
-                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons"
+                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons "
                     role="button"
                     to="#"
                     onClick={(e) =>
@@ -69,7 +72,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faWhatsapp} />
                   </Link>
                   <Link
-                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons"
+                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons "
                     role="button"
                     to="#"
                     onClick={(e) =>
@@ -82,7 +85,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faYoutube} />
                   </Link>
                   <Link
-                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons"
+                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons   "
                     role="button"
                     to="#"
                     onClick={(e) =>
@@ -95,7 +98,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faInstagram} />
                   </Link>
                   <Link
-                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons"
+                    className="btn btn-outline-light btn-floating m-1 text-success rounded-circle icons "
                     role="button"
                     to="#"
                     onClick={(e) =>
@@ -110,12 +113,12 @@ const Footer = () => {
                 </div>
               </div>
               <hr className="w-100 clearfix d-md-none " />
-              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 ">
-                <h6 className="text-uppercase mb-4 fw-bold">Links</h6>
+              <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2 ">
+                <h6 className="text-uppercase mb-4 para-color1">links</h6>
                 <p>
                   <Link
                     to="/"
-                    className="text-decoration-none "
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Home
@@ -124,7 +127,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="/about"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> About Us
@@ -133,7 +136,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="/elegantorchards"
-                    className="fs-6 text-decoration-none"
+                    className="fs-6 text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Projects
@@ -142,7 +145,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="/contact"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Contact Us
@@ -151,7 +154,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="terms&condition"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Terms & Conditions
@@ -159,12 +162,12 @@ const Footer = () => {
                 </p>
               </div>
               <hr className="w-100 clearfix d-md-none " />
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 fw-bold">Projects</h6>
+              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-2">
+                <h6 className="text-uppercase mb-4 para-color1">projects</h6>
                 <p>
                   <Link
                     to="/elegantorchards"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Elegant Orchards
@@ -173,7 +176,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="/elegantorchards"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Buy a FarmLand
@@ -182,7 +185,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="/elegantorchards"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Buy a Land
@@ -191,7 +194,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="/elegantorchards"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Buy a Farm
@@ -200,7 +203,7 @@ const Footer = () => {
                 <p>
                   <Link
                     to="privacypolicies"
-                    className="text-decoration-none "
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                   >
                     <TfiAngleDoubleRight /> Privacy & Policy
@@ -208,13 +211,13 @@ const Footer = () => {
                 </p>
               </div>
               <hr className="w-100 clearfix d-md-none" />
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h6 className="text-uppercase mb-4 fw-bold">Contact</h6>
+              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-2">
+                <h6 className="text-uppercase mb-4 para-color1">contact</h6>
                 <p className="" style={{ color: "#ccc" }}>
                   <FontAwesomeIcon icon={faHome} className="mr-3 pe-2" />
                   <Link
                     to="#"
-                    className="text-decoration-none"
+                    className="text-decoration-none footer-link"
                     style={{ color: "#ccc" }}
                     onClick={(e) =>
                       handleLinkClick(
@@ -232,7 +235,7 @@ const Footer = () => {
                   <FontAwesomeIcon icon={faEnvelope} className="mr-3 pe-2" />
                   <Link
                     to="#"
-                    className="text-decoration-none para-color"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                     onClick={(e) =>
                       handleLinkClick("mailto:support@groavy.com", e)
@@ -245,7 +248,7 @@ const Footer = () => {
                   <FontAwesomeIcon icon={faPhone} className="mr-3 pe-2" />
                   <Link
                     to="#"
-                    className="text-decoration-none para-color"
+                    className="text-decoration-none footer-link para-color"
                     style={{ color: "#ccc" }}
                     onClick={(e) => handleLinkClick("tel:6366829999", e)}
                   >

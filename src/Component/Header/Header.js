@@ -222,7 +222,28 @@ const Header = () => {
                       services
                     </Link>
                   </li>
-                  <li className="nav-item dropdown">
+
+                  <li className="nav-item">
+                    <Link
+                      className={`nav-link pe-3 ${
+                        isHomePage ? "fw-bold" : ""
+                      } ${location.pathname === "/news" ? "active" : ""}`}
+                      to="/news"
+                      onClick={() => {
+                        handleNavClick("News");
+                        handleToggleOffCanvas();
+                      }}
+                    >
+                      news
+                    </Link>
+                  </li>
+
+
+
+
+
+
+                  {/* <li className="nav-item dropdown">
                     <Link
                       className={`nav-link  pe-2 ${
                         isHomePage ? "fw-bold" : ""
@@ -271,7 +292,7 @@ const Header = () => {
                         </Link>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <Link
                       className={`nav-link pe-3 ${

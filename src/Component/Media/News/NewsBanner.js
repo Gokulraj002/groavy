@@ -1,8 +1,8 @@
 import React from 'react'
 import image1 from "../../../images/mob-serv.jpg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTree } from "@fortawesome/free-solid-svg-icons";
-import Banner from '../../../images/About-Banner.png'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faTree } from "@fortawesome/free-solid-svg-icons";
+import Banner from '../../../images/News.jpg'
 const NewsBanner = () => {
   return (
     <div>
@@ -10,13 +10,13 @@ const NewsBanner = () => {
 
       <picture className="w-100">
   <source srcSet={image1} media="(max-width: 699px)"/>
-  <img src={Banner} alt="about-banner" className="w-100" height={'380px'}/>
+  <img src={Banner} alt="about-banner" className="w-100" />
 </picture>
       
   <div className="position-absolute top-50 start-50 translate-middle">
 
 
-    <h2 id="head" className="text-white text-center">
+    {/* <h2 id="head" className="text-white text-center">
               <FontAwesomeIcon
                 icon={faTree}
                 className="icon-before animated-icon"
@@ -26,7 +26,7 @@ const NewsBanner = () => {
                 icon={faTree}
                 className="icon-after animated-icon"
               />
-            </h2>
+            </h2> */}
 
     </div>
     </div>

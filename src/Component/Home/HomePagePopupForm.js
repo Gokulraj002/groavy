@@ -48,25 +48,91 @@ const HomePagePopupForm = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-    // Clear the error message when user starts typing again
+    let error = "";
+
+    if (name === "number") {
+      const regex = /^[0-9\b]+$/;
+      if (value === "" || regex.test(value)) {
+        if (
+          value.length > 0 &&
+          ["0", "1", "2", "3", "4", "5"].includes(value[0])
+        ) {
+          error = "Enter a valid number";
+        }
+        setFormData({
+          ...formData,
+          [name]: value,
+        });
+      }
+    } else if (name === "name") {
+      const regex = /^[a-zA-Z\s]*$/;
+      if (!regex.test(value)) {
+        error = "Don't use special characters in the name";
+      }
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    } else if (name === "email") {
+      if (!value.endsWith("@gmail.com")) {
+        error = "Email must end with @gmail.com";
+      }
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
+
     setFormErrors({
       ...formErrors,
-      [name]: "",
+      [name]: error,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const hasErrors = Object.values(formErrors).some((error) => error !== "");
+    if (hasErrors) {
+      return;
+    }
     if (validateForm()) {
       submitToZohoCRM(formData);
     } else {
-      // Form data is invalid, show validation errors
       console.log("Form validation failed.");
     }
+  };
+
+  const validateForm = () => {
+    let valid = true;
+    const newErrors = {
+      name: "",
+      email: "",
+      number: "",
+    };
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+      valid = false;
+    }
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+      valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid";
+      valid = false;
+    }
+    if (!formData.number.trim()) {
+      newErrors.number = "Number is required";
+      valid = false;
+    }
+
+    setFormErrors(newErrors);
+    return valid;
   };
 
   const submitToZohoCRM = (formData) => {
@@ -76,7 +142,6 @@ const HomePagePopupForm = () => {
     zohoForm.style.display = "none";
 
     const fields = {
-      // Replace with your actual Zoho CRM field names
       xnQsjsdp:
         "7f84793891d1c0d2c010b0619057fdc6f7f20f7b445f641a2f9728700ec74b8e",
       xmIwtLD:
@@ -103,11 +168,8 @@ const HomePagePopupForm = () => {
     zohoForm.submit();
     document.body.removeChild(zohoForm);
 
-    // Show success notification
     showSuccessNotification();
-    // Close the form
     div_hide();
-    // Redirect to home page after form submission
     navigate("/");
   };
 
@@ -119,38 +181,8 @@ const HomePagePopupForm = () => {
     });
   };
 
-  const validateForm = () => {
-    let valid = true;
-    const newErrors = {
-      name: "",
-      email: "",
-      number: "",
-    };
-
-    // Basic validation rules (you can expand this)
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-      valid = false;
-    }
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-      valid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid";
-      valid = false;
-    }
-    if (!formData.number.trim()) {
-      newErrors.number = "Number is required";
-      valid = false;
-    }
-
-    setFormErrors(newErrors);
-    return valid;
-  };
-
   const div_hide = () => {
     setIsVisible(false);
-    // Trigger zoom-out animation
     AOS.refresh();
   };
 
@@ -184,7 +216,7 @@ const HomePagePopupForm = () => {
                   onChange={handleChange}
                 />
                 {formErrors.name && (
-                  <span className="error">{formErrors.name}</span>
+                  <span className="error text-danger">{formErrors.name}</span>
                 )}
               </div>
               <div className="input-container">
@@ -198,7 +230,7 @@ const HomePagePopupForm = () => {
                   onChange={handleChange}
                 />
                 {formErrors.email && (
-                  <span className="error">{formErrors.email}</span>
+                  <span className="error text-danger">{formErrors.email}</span>
                 )}
               </div>
               <div className="input-container">
@@ -208,11 +240,12 @@ const HomePagePopupForm = () => {
                   name="number"
                   placeholder="Whatsapp Number*"
                   type="tel"
+                  maxLength={10}
                   value={formData.number}
                   onChange={handleChange}
                 />
                 {formErrors.number && (
-                  <span className="error">{formErrors.number}</span>
+                  <span className="error text-danger">{formErrors.number}</span>
                 )}
               </div>
               <button className="popupsubmit" type="submit" id="submitpopup">

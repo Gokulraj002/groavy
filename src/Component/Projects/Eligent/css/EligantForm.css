@@ -231,7 +231,7 @@ background-color:#255946 !important;
   border-top: 1px solid var(--white);
   border-radius: 50px;
   /* backdrop-filter: blur(5px); */
-  box-shadow: 4px 4px 60px var(--box-shadow);
+  box-shadow: 4px 4px 40px var(--box-shadow);
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -241,12 +241,12 @@ background-color:#255946 !important;
 
 #eligantform input:hover {
   /* background: rgba(255, 255, 255, 0.5); */
-  box-shadow: 4px 4px 60px 8px var(--box-shadow);
+  box-shadow: 4px 4px 20px 8px var(--box-shadow);
   color:rgb(250, 44, 44);
 }
 
 #eligantform input:focus::placeholder {
-  color: #ffffff;
+  color: #635b5b;
   /* color: rgba(250, 44, 44, 0.7); */
 }
 
@@ -260,9 +260,9 @@ background-color:#255946 !important;
 #eligantform input[type="text"]:focus,
 #eligantform input[type="tel"]:focus,
 #eligantform input[type="email"]:focus {
-  background: white;
+  background: rgb(221, 231, 221);
   color: #000000;
-  box-shadow: 4px 4px 60px 8px var(--box-shadow);
+  box-shadow: 4px 4px 40px 8px var(--box-shadow);
 }
 
 

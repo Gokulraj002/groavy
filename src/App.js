@@ -46,7 +46,7 @@ function App() {
             <Route path="elegantorchards" element={<Eligentpage />} />
             <Route path="Upcomming" element={<Comming />} />
             <Route path="service" element={<Service />} />
-            <Route path="blogs" element={<Blog />} />
+            {/* <Route path="blogs" element={<Blog />} /> */}
             <Route path="news" element={<News />} />
             <Route path="contact" element={<Contact />} />
             <Route path="privacypolicies" element={<PrivacyPolicy />} />

@@ -43,7 +43,7 @@ const ContactForm = () => {
           </div>
           <div className="col-lg-4 col-md-12 text-white ps-4 shadow-lg">
             <div className="mb-4 mt-md-3">
-              <h1 className="h3 ms-2">Contact Information</h1>
+              <h2 className="h3 ms-2">Contact Information</h2>
               <p className="opacity-50 ms-2">
                 <small>
                   Fill out the form and we will get back to you within 24 hours.

@@ -46,6 +46,7 @@ const PrivacyPolicy = () => {
           <p>Last updated: March 04, 2024</p>
 
           <p>
+          We will be sending you informative and promotional notifications related to our services via SMS, Emails, WhatsApp, Voice , RCS.
             This Privacy Policy describes Our policies and procedures on the
             collection, use and disclosure of Your information when You use the
             Service and tells You about Your privacy rights and how the law

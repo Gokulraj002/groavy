@@ -54,6 +54,7 @@ const TermsAndConditions = () => {
           <h1 className="h2 section-title">Terms and Conditions</h1>
           <p className="section-title">Welcome to Groavy Buildcon!</p>
           <p>
+          We will be sending you informative and promotional notifications related to our services via SMS, Emails, WhatsApp, Voice , RCS.
             These terms and conditions outline the rules and regulations for the
             use of Groavy Buildcon's Website, located at{" "}
             <a href="https://groavy.com/">https://groavy.com/</a>. By accessing

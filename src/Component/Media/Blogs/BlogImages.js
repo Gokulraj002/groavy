@@ -15,22 +15,22 @@ import Sep18 from "./Image/sep-17.jpg";
 import Sep17 from "../../../images/sliderimages/1.png";
 // import Sep18 from "../../Projects/Eligent/ElegantImages/Live-Images/1.jpg";
 
-import Sep19 from "../../Projects/Eligent/ElegantImages/elegant-main.jpg"
+import Sep19 from "../../Projects/Eligent/ElegantImages/elegant-main.jpg";
 import Sep20 from "./Image/Sep20.jpg";
 import Sep21 from "./Image/Sep21.jpg";
 import Sep23 from "./Image/sep-23.jpg";
 import Sep24 from "./Image/Sep-24.jpg";
 import Sep25 from "./Image/sep25.jpg";
-import Sep26 from '../../../images/trop.png'
+import Sep26 from "../../../images/trop.png";
 import Sep27 from "./Image/sep-27.jpg";
 import Sep28 from "./Image/sep-28.jpg";
 import Sep30 from "./Image/sep-30.jpg";
-import Oct1 from "./October/Image/Oct1.jpg"
-import Oct2 from "./October/Image/oct-2.jpg"
-import Oct3 from "./October/Image/Oct3.png"
-import Oct4 from "./October/Image/oct-4.jpg"
-import Oct5 from "./October/Image/otc-5.jpg"
-import Oct8 from "./October/Image/oct-8.jpg"
+import Oct1 from "./October/Image/Oct1.jpg";
+import Oct2 from "./October/Image/oct-2.jpg";
+import Oct3 from "./October/Image/Oct3.png";
+import Oct4 from "./October/Image/oct-4.jpg";
+import Oct5 from "./October/Image/otc-5.jpg";
+import Oct8 from "./October/Image/oct-8.jpg";
 import Oct10 from "./October/Image/Oct10.jpg";
 import Oct28 from "./October/Image/Oct28.png";
 import Dec2 from "./Image/Dec2.webp";
@@ -46,8 +46,8 @@ import Jan23 from "./Image/Jan23.webp";
 import Jan28 from "./Image/Jan28.webp";
 import Feb04 from "./Image/Feb4.webp";
 import Feb06 from "./Image/Feb6.webp";
-
-
+import Feb12 from "../../Projects/Eligent/ElegantImages/Live-Images/2.jpg";
+import Feb13 from "./Image/Feb13.webp";
 
 const imageMap = {
   Mahogany,
@@ -79,7 +79,7 @@ const imageMap = {
   Oct4,
   Oct5,
   Oct8,
-  Oct10, 
+  Oct10,
   Oct28,
   Dec2,
   Dec10,
@@ -93,8 +93,9 @@ const imageMap = {
   Jan23,
   Jan28,
   Feb04,
-  Feb06
-
+  Feb06,
+  Feb12,
+  Feb13,
 };
 
 export const getImage = (imageName) => imageMap[imageName] || null;

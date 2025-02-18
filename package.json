@@ -115,11 +115,12 @@
       "/blogs/farm-land-for-sale-near-bangalore/",
       "/blogs/earn-high-returns-with-managed-farmland/",
       "/blogs/managed-farmland-project-bangalore/",
+      "/blogs/best-managed-farmland-investment-north-bangalore/",
+      "/blogs/chikkaballapur-golden-farmland-investment-near-bangalore/",
       "/privacypolicies/",
       "/termsandcondition/"
     ]
   },
-  
   "eslintConfig": {
     "extends": [
       "react-app",

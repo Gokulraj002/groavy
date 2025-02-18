@@ -66,6 +66,8 @@ import Jan23 from "./Component/Media/Blogs/Jan2025/Jan23";
 import Jan28 from "./Component/Media/Blogs/Jan2025/Jan28";
 import Feb04 from "./Component/Media/Blogs/Feb2025/Feb04";
 import Feb06 from "./Component/Media/Blogs/Feb2025/Feb06";
+import Feb12 from "./Component/Media/Blogs/Feb2025/Feb12";
+import Feb13 from "./Component/Media/Blogs/Feb2025/Feb13";
 // import RSSFeed from "./Component/Media/Blogs/RSSFeed";
 function App() {
   useEffect(() => {
@@ -274,6 +276,15 @@ function App() {
               path="/blogs/managed-farmland-project-bangalore/"
               element={<Feb06/>}
             />
+             <Route
+              path="/blogs/best-managed-farmland-investment-north-bangalore/"
+              element={<Feb12/>}
+            />
+            <Route
+              path="/blogs/chikkaballapur-golden-farmland-investment-near-bangalore/"
+              element={<Feb13/>}
+            />
+            
              
             <Route path="privacypolicies/" element={<PrivacyPolicy />} />
             <Route path="termsandcondition/" element={<TermsAndConditions />} />

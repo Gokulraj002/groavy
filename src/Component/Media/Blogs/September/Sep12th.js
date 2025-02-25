@@ -12,23 +12,23 @@ function Sep12th() {
   return (
     <>
       <Helmet>
-        <title>Choosing the Right Managed Farmland: Key Considerations</title>
+        <title>Best Managed Farmland Near Bangalore to Invest</title>
         <meta
           name="description"
-          content='Discover how to select the best managed farmland, with a focus on key factors for success. Ideal for those interested in farmland near Chikkaballapura'
+          content="Discover the best managed farmland near Bangalore, Chikkaballapur, and Nandi Hills. A great investment with expert farmland management services."
         />
         <meta
           name="keywords"
-          content="managed farmland, farmland investment, agricultural investments, farmland quality, farmland management, farmland near Bengaluru, farmland near Lepakshi, farmland near Chikkaballapur"
+          content="best managed farmland near Bangalore, farmland investment, farmland near Chikkaballapur, managed farmland near Lepakshi, best farmland project in Bangalore, farmland plots near Peresandra, agricultural farmland experts, managed farmland for sale, buy managed farm land"
         />
         <meta name="author" content="Groavy Team" />
         <meta
           property="og:title"
-          content="Choosing the Right Managed Farmland: Key Considerations"
+          content="Best Managed Farmland Near Bangalore to Invest"
         />
         <meta
           property="og:description"
-          content='Discover how to select the best managed farmland, with a focus on key factors for success. Ideal for those interested in farmland near Chikkaballapura'
+          content="Discover the best managed farmland near Bangalore, Chikkaballapur, and Nandi Hills. A great investment with expert farmland management services."
         />
         <meta property="og:image" content={Banner} />
         <meta
@@ -40,11 +40,11 @@ function Sep12th() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Choosing the Right Managed Farmland: Key Considerations"
+          content="Best Managed Farmland Near Bangalore to Invest"
         />
         <meta
           name="twitter:description"
-          content='Discover how to select the best managed farmland, with a focus on key factors for success. Ideal for those interested in farmland near Chikkaballapura'
+          content="Discover the best managed farmland near Bangalore, Chikkaballapur, and Nandi Hills. A great investment with expert farmland management services."
         />
         <meta name="twitter:image" content={Banner} />
         <meta name="twitter:site" content="@yourtwitterhandle" />

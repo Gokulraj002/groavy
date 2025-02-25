@@ -48,6 +48,8 @@ import Feb04 from "./Image/Feb4.webp";
 import Feb06 from "./Image/Feb6.webp";
 import Feb12 from "../../Projects/Eligent/ElegantImages/Live-Images/2.jpg";
 import Feb13 from "./Image/Feb13.webp";
+import Feb18 from "./Image/Feb18.webp";
+import Feb20 from "../../../images/3d2.jpg";
 
 const imageMap = {
   Mahogany,
@@ -96,6 +98,8 @@ const imageMap = {
   Feb06,
   Feb12,
   Feb13,
+  Feb18,
+  Feb20,
 };
 
 export const getImage = (imageName) => imageMap[imageName] || null;

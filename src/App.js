@@ -68,6 +68,8 @@ import Feb04 from "./Component/Media/Blogs/Feb2025/Feb04";
 import Feb06 from "./Component/Media/Blogs/Feb2025/Feb06";
 import Feb12 from "./Component/Media/Blogs/Feb2025/Feb12";
 import Feb13 from "./Component/Media/Blogs/Feb2025/Feb13";
+import Feb18 from "./Component/Media/Blogs/Feb2025/Feb18";
+import Feb20 from "./Component/Media/Blogs/Feb2025/Feb20";
 // import RSSFeed from "./Component/Media/Blogs/RSSFeed";
 function App() {
   useEffect(() => {
@@ -252,40 +254,46 @@ function App() {
               path="blogs/farmplot-for-sale-agricultural-farmland-near-bangalore/"
               element={<Jan10 />}
             />
-              <Route
+            <Route
               path="blogs/managed-farmland-near-isha-foundation/"
               element={<Jan15 />}
             />
-             <Route
+            <Route
               path="blogs/best-managed-farmland-near-karnataka/"
-              element={<Jan21/>}
+              element={<Jan21 />}
             />
-             <Route
+            <Route
               path="blogs/10-mistakes-to-avoid-buying-agricultural-land-near-bangalore/"
-              element={<Jan23/>}
+              element={<Jan23 />}
             />
-             <Route
+            <Route
               path="/blogs/farm-land-for-sale-near-bangalore/"
-              element={<Jan28/>}
+              element={<Jan28 />}
             />
-             <Route
+            <Route
               path="/blogs/earn-high-returns-with-managed-farmland/"
-              element={<Feb04/>}
+              element={<Feb04 />}
             />
             <Route
               path="/blogs/managed-farmland-project-bangalore/"
-              element={<Feb06/>}
+              element={<Feb06 />}
             />
-             <Route
+            <Route
               path="/blogs/best-managed-farmland-investment-north-bangalore/"
-              element={<Feb12/>}
+              element={<Feb12 />}
             />
             <Route
               path="/blogs/chikkaballapur-golden-farmland-investment-near-bangalore/"
-              element={<Feb13/>}
+              element={<Feb13 />}
             />
-            
-             
+            <Route
+              path="/blogs/farm-themed-villa-plots-near-bangalore/"
+              element={<Feb18 />}
+            />
+            <Route
+              path="/blogs/villa-plots-near-chikkaballapur/"
+              element={<Feb20 />}
+            />
             <Route path="privacypolicies/" element={<PrivacyPolicy />} />
             <Route path="termsandcondition/" element={<TermsAndConditions />} />
             <Route path="faq/" element={<FAQ />} />

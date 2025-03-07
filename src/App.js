@@ -70,6 +70,8 @@ import Feb12 from "./Component/Media/Blogs/Feb2025/Feb12";
 import Feb13 from "./Component/Media/Blogs/Feb2025/Feb13";
 import Feb18 from "./Component/Media/Blogs/Feb2025/Feb18";
 import Feb20 from "./Component/Media/Blogs/Feb2025/Feb20";
+import Feb25 from "./Component/Media/Blogs/Feb2025/Feb25";
+import Feb27 from "./Component/Media/Blogs/Feb2025/Feb27";
 // import RSSFeed from "./Component/Media/Blogs/RSSFeed";
 function App() {
   useEffect(() => {
@@ -293,6 +295,14 @@ function App() {
             <Route
               path="/blogs/villa-plots-near-chikkaballapur/"
               element={<Feb20 />}
+            />
+            <Route
+              path="/blogs/best-farmland-near-varlakonda/"
+              element={<Feb25 />}
+            />
+            <Route
+              path="/blogs/best-farm-themed-villa-plots-near-north-bangalore/"
+              element={<Feb27 />}
             />
             <Route path="privacypolicies/" element={<PrivacyPolicy />} />
             <Route path="termsandcondition/" element={<TermsAndConditions />} />

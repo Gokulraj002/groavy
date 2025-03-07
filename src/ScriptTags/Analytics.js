@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 
 const GA_MEASUREMENT_ID = 'G-T6X4MJSN59'; // Your Google Analytics 4 Measurement ID
-const ADS_CONVERSION_ID = 'AW-16458676935'; // Your Google Ads Conversion ID
+const ADS_CONVERSION_ID = "AW-16905330095"; // Your Google Ads Conversion ID
 const GTM_ID = 'GTM-5XWM5NKG'; // Your Google Tag Manager ID
 
 const Analytics = () => {

@@ -17,20 +17,22 @@ function Jan10() {
         <title>Agricultural Farmland Near Bangalore</title>
         <meta
           name="description"
-          content='Discover premium agricultural farmland near Bangalore. Explore serene managed farmland plots in Chikkaballapur, offering  high investment potential.'
+          content="Explore premium agricultural farmland near Bangalore with high investment potential. Secure your managed farmland plots in Chikkaballapur today."
         />
         <meta
           name="keywords"
           content="agricultural farmland near Bangalore, managed farmland plots Chikkaballapur, sustainable farming near Bangalore, farmland investment opportunities, premium farmland near Lepakshi"
         />
         <meta name="author" content="Groavy Team" />
+
+        {/* Open Graph Meta Tags for Social Media Preview */}
         <meta
           property="og:title"
           content="Agricultural Farmland Near Bangalore"
         />
         <meta
           property="og:description"
-          content='Discover premium agricultural farmland near Bangalore. Explore serene managed farmland plots in Chikkaballapur, offering  high investment potential.'
+          content="Explore premium agricultural farmland near Bangalore with high investment potential. Secure your managed farmland plots in Chikkaballapur today."
         />
         <meta property="og:image" content={Image} />
         <meta
@@ -39,6 +41,8 @@ function Jan10() {
         />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Groavy Buildcon" />
+
+        {/* Twitter Meta Tags for Better Social Sharing */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -46,17 +50,22 @@ function Jan10() {
         />
         <meta
           name="twitter:description"
-          content='Discover premium agricultural farmland near Bangalore. Explore serene managed farmland plots in Chikkaballapur, offering  high investment potential.'
+          content="Discover agricultural farmland near Bangalore with sustainable practices and modern infrastructure. Ideal for investment and eco-friendly farming."
         />
         <meta name="twitter:image" content={Image} />
         <meta name="twitter:site" content="@groavybuildcon" />
+
+        {/* SEO Indexing & Theme Setup */}
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#ffffff" />
+
+        {/* Canonical URL for SEO Best Practices */}
         <link
           rel="canonical"
           href="https://www.groavy.com/blogs/farmplot-for-sale-agricultural-farmland-near-bangalore/"
         />
       </Helmet>
+
       {/* Hero Section */}
       <div className="position-relative pb-5 bg-light">
         <picture className="w-100">

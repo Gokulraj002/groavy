@@ -15,23 +15,26 @@ function Dec18() {
   return (
     <>
       <Helmet>
-        <title>Which is the Best Managed Farmland in Bangalore?</title>
+        <title>
+          Which is the Best Managed Farmland in Bangalore? - Groavy Buildcon
+        </title>
         <meta
           name="description"
-          content='Discover the best managed farmland in Bangalore with Groavy Buildcon. Explore sustainable farming and high-return investments near Nandi Hills.'
+          content="Explore the best managed farmland in Bangalore with Groavy Buildcon. Invest in eco-friendly farmland near Nandi Hills for sustainable growth & high returns."
         />
         <meta
           name="keywords"
-          content="best managed farmland in Bangalore, farmland near Nandi Hills, sustainable farmland Bangalore, eco-friendly farmland investments"
+          content="best managed farmland in Bangalore, farmland near Nandi Hills, sustainable farmland Bangalore, eco-friendly farmland investments, premium agricultural land"
         />
         <meta name="author" content="Groavy Team" />
+
         <meta
           property="og:title"
-          content="Which is the Best Managed Farmland in Bangalore?"
+          content="Which is the Best Managed Farmland in Bangalore? - Groavy Buildcon"
         />
         <meta
           property="og:description"
-          content='Discover the best managed farmland in Bangalore with Groavy Buildcon. Explore sustainable farming and high-return investments near Nandi Hills.'
+          content="Discover premium managed farmland in Bangalore by Groavy Buildcon. Experience sustainable farming, modern amenities, and excellent investment opportunities."
         />
         <meta property="og:image" content={Images} />
         <meta
@@ -39,20 +42,23 @@ function Dec18() {
           content="https://www.groavy.com/blogs/which-is-best-managed-farmland-in-bangalore/"
         />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="GroavyBuildcon" />
+        <meta property="og:site_name" content="Groavy Buildcon" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Which is the Best Managed Farmland in Bangalore?"
+          content="Which is the Best Managed Farmland in Bangalore? - Groavy Buildcon"
         />
         <meta
           name="twitter:description"
-          content='Discover the best managed farmland in Bangalore with Groavy Buildcon. Explore sustainable farming and high-return investments near Nandi Hills.'
+          content="Looking for the best managed farmland in Bangalore? Groavy Buildcon offers premium farmland near Nandi Hills with sustainable features and great investment potential."
         />
         <meta name="twitter:image" content={Images} />
-        <meta name="twitter:site" content="@yourtwitterhandle" />
+        <meta name="twitter:site" content="@groavybuildcon" />
+
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#ffffff" />
+
         <link
           rel="canonical"
           href="https://www.groavy.com/blogs/which-is-best-managed-farmland-in-bangalore/"
@@ -92,9 +98,9 @@ function Dec18() {
         <section className="mb-5 container">
           <p className="para-color3 mt-4">
             When it comes to finding the best-managed farmland in Bangalore{" "}
-            <Link to="/elegantorchards/">Elegant Orchards Estate</Link> by Groavy
-            Buildcon, located near the scenic <strong>Nandi Hills</strong> and
-            offering{" "}
+            <Link to="/elegantorchards/">Elegant Orchards Estate</Link> by
+            Groavy Buildcon, located near the scenic{" "}
+            <strong>Nandi Hills</strong> and offering{" "}
             <Link to="/blogs/best-farmland-near-chikkaballapur/">
               managed farmlands near Chikkaballapur
             </Link>

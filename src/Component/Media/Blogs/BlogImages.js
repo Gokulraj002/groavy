@@ -11,10 +11,7 @@ import Blog9 from "./Image/Sep11.png";
 import Sep12th from "./Image/Sep12th.jpg";
 import Sep13 from "./Image/sep-13.jpg";
 import Sep18 from "./Image/sep-17.jpg";
-// import Sep18 from "./Image/Sep-16.jpg";
 import Sep17 from "../../../images/sliderimages/1.png";
-// import Sep18 from "../../Projects/Eligent/ElegantImages/Live-Images/1.jpg";
-
 import Sep19 from "../../Projects/Eligent/ElegantImages/elegant-main.jpg";
 import Sep20 from "./Image/Sep20.jpg";
 import Sep21 from "./Image/Sep21.jpg";
@@ -52,6 +49,8 @@ import Feb18 from "./Image/Feb18.webp";
 import Feb20 from "../../../images/3d2.jpg";
 import Feb25 from "./Image/Feb25.webp";
 import Feb27 from "./Image/Feb27.webp";
+import Mar07 from "./Image/Mar07.webp";
+import Mar11 from "./Image/Mar11.webp";
 
 const imageMap = {
   Mahogany,
@@ -104,6 +103,8 @@ const imageMap = {
   Feb20,
   Feb25,
   Feb27,
+  Mar07,
+  Mar11,
 };
 
 export const getImage = (imageName) => imageMap[imageName] || null;
